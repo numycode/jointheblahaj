@@ -1,0 +1,12 @@
+[project]
+name = "jointheblahaj"
+version = "0.1.0"
+description = "Join The Blåhaj."
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "flask",
+    "requests",
+    "python-dotenv",
+    "gunicorn>=26.0.0",
+]
