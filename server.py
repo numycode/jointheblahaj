@@ -25,7 +25,7 @@ def callback():
     requests.post("https://slack.com/api/users.profile.set",
         headers={"Authorization": "Bearer " + token},
         json={"profile": {
-            "status_text": "Distinguished Blåhaj member. Join The Blåhaj today at blahaj.numycode.dev",
+            "status_text": "Distinguished Blåhaj member // Join The Blåhaj at blahaj.numycode.dev",
             "status_emoji": ":blobhaj_party:",
             "status_expiration": 0
 
