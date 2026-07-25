@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>about this site</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body class="font-display bg-blue-950 flex justify-center">
+        <div class="flex justify-center flex-col my-4 mx-4">
+            <h1 class="font-bold text-3xl text-blue-500">about this site!</h1>
+            <p class="text-blue-600">
+                hi! this site was inspired off of <a href="https://github.com/Milk-Cool/slack-gold" class="underline">Slack Gold</a> by milkcool, which set your status with a link too.<br>
+                this made it spread decently far across the (<a href="https://hackclub.com" class="underline">Hack Club</a>) Slack (since people saw the status, clicked the link, and left the status as it, causing many others to do the same),<br>
+                and many well-known users used the status. i'm trying to recreate that with blahåj, the IKEA shark that is loved throughout Hack Club.<br>
+                <br>
+                unlike milkcool's app (which uses TypeScript), i'm using Flask, and also Tailwind CSS, which are both firsts for me. Flask handles the slack API stuff, and serves the pages.<br>
+                it is running in a Docker container on theMAINFRAME, my mini PC, and has decent (ish) uptime.<br>
+                <br>
+                i believe the blahaj gif is by <a href="https://hackclub.enterprise.slack.com/team/U084NC30FP0" class="underline">ploszukiwacz</a>, although i am not sure.
+            </p>
+        </div>
+    </body>
+</html>
