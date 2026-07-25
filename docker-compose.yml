@@ -1,0 +1,14 @@
+services:
+  blahaj:
+    build: .
+    container_name: blahaj
+    ports:
+      - "127.0.0.1:5000:5000"
+    env_file:
+      - .env
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:5000/')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
